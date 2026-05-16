@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Dhawal Dwivedi | AI Mentor</title>
 
     <meta charset="UTF-8">
@@ -781,6 +783,137 @@
             letter-spacing:0.4px;
 
             line-height:1.8;
+        }
+
+        /* ================= MOBILE RESPONSIVE ================= */
+
+        @media (max-width: 768px){
+
+            body{
+                overflow-x:hidden;
+            }
+
+            section{
+                padding:70px 22px;
+            }
+
+            /* HERO */
+
+            .hero{
+                min-height:auto;
+            }
+
+            .hero-content{
+                grid-template-columns:1fr;
+                gap:50px;
+                text-align:center;
+            }
+
+            .hero-image{
+                margin-top:0;
+            }
+
+            .hero-image::before{
+                width:100%;
+                max-width:320px;
+                height:420px;
+
+                left:50%;
+                transform:translateX(-50%);
+            }
+
+            .hero-image img{
+                width:100%;
+                max-width:320px;
+                height:420px;
+            }
+
+            .hero-text h1{
+                font-size:3.4rem;
+            }
+
+            .hero-text p{
+                font-size:1rem;
+                max-width:100%;
+            }
+
+            .hero-buttons{
+                justify-content:center;
+            }
+
+            .hero-stats{
+                grid-template-columns:1fr;
+            }
+
+            /* TITLES */
+
+            .section-heading{
+                font-size:3rem;
+                line-height:1.1;
+            }
+
+            .workflow-title{
+                font-size:3rem;
+                line-height:1.1;
+            }
+
+            .section-subtext{
+                font-size:1rem;
+            }
+
+            /* IMAGE GRIDS */
+
+            .image-grid{
+                grid-template-columns:1fr;
+            }
+
+            .image-grid img{
+                height:auto;
+            }
+
+            /* VIDEOS */
+
+            .video-section{
+                flex-direction:column;
+                align-items:center;
+            }
+
+            .video-link{
+                width:100%;
+                max-width:280px;
+                height:500px;
+            }
+
+            /* CONTACT */
+
+            .contact-content{
+                padding:70px 20px;
+            }
+
+            .contact-content h1{
+                font-size:3rem;
+            }
+
+            .contact-content p{
+                margin-bottom:70px;
+                font-size:1rem;
+            }
+
+            .contact-grid{
+                grid-template-columns:1fr;
+            }
+
+            /* FOOTER */
+
+            .footer{
+                padding:20px;
+            }
+
+            .footer p{
+                font-size:0.82rem;
+                line-height:1.8;
+            }
+
         }
 
 
